@@ -233,7 +233,7 @@ describe('RenewRequest', () => {
       renewRequest.patronIdentifier = '104000000105';
       renewRequest.sequence = 3;
       renewRequest.transactionDate = Message.getDateTime(new Date(1996, 1, 12, 10, 5, 14));
-      const testMessage = '29NN19960212    10051419960212    100514AO|AA104000000105|AB000000000005792|AC|AY3AZEDC2\r\n';
+      const testMessage = '29NN19960212    10051419960212    100514AO|AA104000000105|AB000000000005792|AC|BOY|AY3AZEC5E\r\n';
       assert.equal(renewRequest.getMessage(), testMessage);
       done();
     });

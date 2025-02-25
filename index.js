@@ -17,6 +17,7 @@ const RenewRequest = require('./lib/requests/Renew');
 const RenewAllRequest = require('./lib/requests/RenewAll');
 const FeePaidRequest = require('./lib/requests/FeePaid');
 const EndPatronSessionRequest = require('./lib/requests/EndPatronSession');
+const HoldRequest = require('./lib/requests/Hold');
 
 // Responses
 const CheckinResponse = require('./lib/responses/Checkin');
@@ -31,6 +32,7 @@ const PatronEnableResponse = require('./lib/responses/PatronEnable');
 const PatronInformationResponse = require('./lib/responses/PatronInformation');
 const PatronStatusResponse = require('./lib/responses/PatronStatus');
 const ACStatusResponse = require('./lib/responses/ACStatus');
+const HoldResponse = require('./lib/responses/Hold');
 
 // Variables
 const CirculationStatus = require('./lib/variables/CirculationStatus');
@@ -63,6 +65,7 @@ module.exports = {
   RenewAllRequest,
   FeePaidRequest,
   EndPatronSessionRequest,
+  HoldRequest,
   CheckinResponse,
   CheckoutResponse,
   RenewAllResponse,
@@ -74,6 +77,7 @@ module.exports = {
   PatronInformationResponse,
   PatronStatusResponse,
   ACStatusResponse,
+  HoldResponse,
   CirculationStatus,
   CurrencyType,
   FeeType,
